@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/img/img.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Viva Bem Reflexoterapia</title>
+</head>
+
+<body>
+    <div onclick="esconderForm()" class="mascara-formulario"></div>
+    <header>
+        <nav>
+            <div class="container-nav">
+
+                <a href="#"class="item-burguer"><i class="bi bi-list"></i></a>
+
+                <div class="imagem">
+                    <img src="/img/Logo Dayse - sem cor.png" alt="Imagem da Logo" style="max-width:100%;">
+                </div>
+                <div class="header">
+                    <h1>Viva Bem</h1>
+                    <p id="logo">Reflexoterapia</p>
+                </div>
+                <div class="informacao">
+                    <a href="#">Home</a>
+                    <a href="/html/galeria.html">Galeria</a>
+                    <a href="/html/depoimento.html">Depoimento</a>
+                    <button onclick=" mostrarForm()">Contato</button>
+                </div>
+            </div>
+        </nav>
+        <div class="menu-mobile">
+      
+            <a href="#">Home</a>
+            <a href="/html/galeria.html">Galeria</a>
+            <a href="/html/depoimento.html">Depoimento</a>
+           
+    
+    </div>
+      
+    </header> 
+   
+    <main>
+        <section>
+            <div class="container">
+                <div class="col-6">
+                    <h3>Pensando em se cuidar?</h3>
+                    <h2>Faça Reflexoterapia.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sed reiciendis similique libero
+                            debitis vitae, iure repellat officiis quaerat aut exercitationem, eveniet eius officia
+                            possimus temporibus voluptatem vero harum sunt!. </p>
+                        <button onclick="mostrarForm()">Agende Seu Horário</button>
+                </div>
+                <div class="col-6">
+                    <img class="img" src="/img/reflexo.jpg" alt="imagem da reflexologia">
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <div class="col-12">
+                <div class="row">
+                    <h2>Reflexologia podal: O que é, para que serve e como fazer?</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="cards">
+                    <div class="col-4">
+                        <img src="/img/Logo Dayse - color.png" alt="imagem da logo" style="width: 80px;">
+                        <h3>O que é</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis totam ducimus nemo
+                            libero culpa facilis fugiat aliquid, quibusdam voluptatibus vel laudantium asperiores neque
+                            temporibus possimus sed dolorem repellat nesciunt nesciunt.
+                        </p>
+
+                    </div>
+                    <div class="col-4">
+                        <img src="/img/Logo Dayse - color.png" alt="imagem da logo" style="width: 80px;">
+                        <h3>Para que serve?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nulla amet qui architecto
+                            tenetur aperiam, omnis placeat deserunt! Corporis iste deleniti repellat sunt. Sint eum
+                            facere a deleniti ad tenetur sed.
+                        </p>
+
+                    </div>
+                    <div class="col-4">
+                        <img src="/img/Logo Dayse - color.png" alt="imagem da logo" style="width: 80px;">
+                        <h3>Como fazer?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit assumenda consequuntur
+                            nam, deleniti soluta eum asperiores nihil voluptate at dolorem aliquid fugiat optio rem,
+                            minus officiis, omnis fuga! Similique, repudiandae sed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <form class="formulario-fale-conosco" action="https://formcarry.com/s/coaSUxbfn6-" method="POST"
+            enctype="multipart/form-data">
+            <input type="text" placeholder="Digite o seu nome" required name="nome">
+            <input type="tel" placeholder="Digite o seu telefone" required name="telefone">
+            <input type="email" placeholder="Digite o seu email" required name="email">
+            <textarea placeholder="Tire suas duvidas..." required name="duvidas"></textarea>
+            <a href="https://formcarry.com"><button type="submit">Agende Seu Horário</button></a>
+        </form>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <h2>Viva Bem </h2>
+            <p>Reflexoterapia</p>
+        </div>
+
+        <div class="direitos">
+            <p>© Todos os direitos reservados</p>
+        </div>
+
+
+
+        <div class="icones">
+            <ul>
+                <a href="#">
+                    <li>
+                        <span class="icon"><i class="bi bi-instagram"></i></span>
+                        <span class="text">Instagram</span>
+                    </li>
+                </a>
+
+                <a href="https://wa.me/5575981698804?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%A3o%20sobre%20a%20reflexoterapia."
+                    target="_blank">
+                    <li style="--color5: #43fe84; -color6: #2dbc5d">
+                        <span class="icon"><i class="bi bi-whatsapp"></i></i></span>
+                        <span class="text">whatsapp</span>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+<script src="/jquery-3.7.1.js"></script>
+<script>
+
+const form= document.querySelector(".formulario-fale-conosco")
+const mascara= document.querySelector(".mascara-formulario")
+
+function mostrarForm(){
+    form.style.left= "50%"
+    form.style.transform= "translateX(-50%)"
+    mascara.style.visibility= "visible"
+}
+
+const ocultar= document.querySelector(".mascara-formulario")
+
+function ocultarFormulario(){
+    ocultar.style.left = "-300px"
+}
+function esconderForm(){
+    form.style.left= "-300px"    
+    form.style.transform= "translateX(0)"
+    mascara.style.visibility= "hidden"
+}
+
+
+$('.menu-mobile').toggle();
+$('.item-burguer').click(function (){
+    $('.menu-mobile').slideToggle('slow');
+})
+
+
+
+
+
+
+
+
+</script>
+
+</html>

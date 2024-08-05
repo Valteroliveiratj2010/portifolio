@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/img/img.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Viva Bem Reflexoterapia</title>
+</head>
+
+<body>
+    <div onclick="esconderForm()" class="mascara-formulario"></div>
+    <header>
+        <nav>
+            <div class="container-nav">
+                <div class="imagem">
+                    <img src="/img/Logo Dayse - sem cor.png" alt="Imagem da Logo" style="max-width:100%;">
+                </div>
+                <div class="header">
+                    <h1>Viva Bem</h1>
+                    <p id="logo">Reflexoterapia</p>
+                </div>
+                <div class="informacao">
+                    <a href="/html/index.html">Home</a>
+                    <a href="/html/galeria.html">Galeria</a>
+                    <a href="/html/depoimento.html">Depoimento</a>
+                    <button onclick=" mostrarForm()">Contato</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form class="formulario-fale-conosco" action="https://formcarry.com/s/coaSUxbfn6-" method="POST"
+        enctype="multipart/form-data">
+        <input type="text" placeholder="Digite o seu nome" required name="nome">
+        <input type="tel" placeholder="Digite o seu telefone" required name="telefone">
+        <input type="email" placeholder="Digite o seu email" required name="email">
+        <textarea placeholder="Tire suas duvidas..." required name="duvidas"></textarea>
+        <a href="https://formcarry.com"><button type="submit">Agende Seu Horário</button></a>
+    </form>
+    </main>
+    </body>
+      <script src="/scripit.js"></script>
+    </html>
